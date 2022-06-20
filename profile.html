@@ -1,0 +1,247 @@
+<meta http-equiv='cache-control' content='no-cache'>
+<meta http-equiv='expires' content='0'>
+<meta http-equiv='pragma' content='no-cache'>
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Page Title</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        /* Style the body */
+        
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+        }
+        /* Header/logo Title */
+        
+        .header {
+            padding: 80px;
+            text-align: center;
+            background: #1abc9c;
+            color: white;
+        }
+        /* Increase the font size of the heading */
+        
+        .header h1 {
+            font-size: 40px;
+        }
+        /* Style the top navigation bar */
+        
+        .navbar {
+            overflow: hidden;
+            background-color: #333;
+        }
+        /* Style the navigation bar links */
+        
+        .navbar a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+        }
+        /* Right-aligned link */
+        
+        .navbar a.right {
+            float: right;
+        }
+        /* Change color on hover */
+        
+        .navbar a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+        /* Column container */
+        
+        .row {
+            display: -ms-flexbox;
+            /* IE10 */
+            display: flex;
+            -ms-flex-wrap: wrap;
+            /* IE10 */
+            flex-wrap: wrap;
+        }
+        /* Create two unequal columns that sits next to each other */
+        /* Sidebar/left column */
+        
+        .side {
+            -ms-flex: 30%;
+            /* IE10 */
+            flex: 30%;
+            background-color: #f1f1f1;
+            padding: 20px;
+        }
+        /* Main column */
+        
+        .main {
+            -ms-flex: 70%;
+            /* IE10 */
+            flex: 70%;
+            background-color: white;
+            padding: 20px;
+        }
+        /* Fake image, just for this example */
+        
+        .fakeimg {
+            background-color: #aaa;
+            width: 100%;
+            padding: 20px;
+        }
+        /* Footer */
+        
+        .footer {
+            padding: 20px;
+            text-align: center;
+            background: #ddd;
+        }
+        /* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+        
+        @media screen and (max-width: 700px) {
+            .row {
+                flex-direction: column;
+            }
+        }
+        /* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+        
+        @media screen and (max-width: 400px) {
+            .navbar a {
+                float: none;
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="header">
+        <h1>Hi, I'm Pasindu</h1>
+        <h4>A bit about me...</h4>
+    </div>
+
+    <div class="navbar">
+        <a href="./index.html">Home</a>
+        <a href="./profile.html">Profile</a>
+        <a href="./projects.html">Projects</a>
+        <a href="#">Photography</a>
+        <a href="#" class="right">Socials</a>
+    </div>
+
+    <div class="row">
+        <div class="side">
+            <h2>About Me</h2>
+            <h5>Pasindu Siriwardena</h5>
+            <div class="fakeimg" style="height:200px;">Image</div>
+            <p>Motivated New Grad uilding my portfolio </p>
+
+            <h2>Education</h2>
+            <h5>Attended Calfornia State University Los Angeles</h5>
+            <h5>Master's in Computer Science (Cum Laude)</h5>
+            <div class="fakeimg" style="height:60px;">Image</div><br>
+            <div class="fakeimg" style="height:60px;">Image</div><br>
+            <div class="fakeimg" style="height:60px;">Image</div>
+        </div>
+        <br>
+        <div class="main">
+            <div id="Work">
+                <h2>Work Experience</h2>
+                <table id="StateFarm" style="padding-bottom: 10px;">
+                    <tr>
+                        <h3>State Farm - SWE</h3>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <div class="fakeimg " style="height:100px; width: 100px; ">Image</div>
+                        </td>
+                        <td>
+                            <ul>
+                                <li>Currently working to build and implement the application's CI/CD pipeline</li>
+                                <li>Conducting integrations of newly adopted frameworks and mainting current ones</li>
+                            </ul>
+                        </td>
+                    </tr>
+                </table>
+                <table id="ARL" style="padding-bottom: 10px;">
+                    <tr>
+                        <h3>ARL West - Journeyman Fellow</h3>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="fakeimg " style="height:100px; width: 100px; ">Image</div>
+                        </td>
+                        <td>
+                            <ul>
+                                <li>Worked with a Army Research Laboratory to create a virtual test environment using Unity Game Engine</li>
+                                <li>These environments contain dangers that are built using various methods, both 2D and 3D</li>
+                                <li>Evaluated augmented reality visualizations by conducting online user studies and evaluating the results to determine which visualizations weere the most effective</li>
+                            </ul>
+                        </td>
+                    </tr>
+                </table>
+                <table id="KFT" style="padding-bottom: 10px; ">
+                    <tr>
+                        <h3>KungFuTea - Barista</h3>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="fakeimg " style="height:100px; width: 100px; ">Image</div>
+                        </td>
+                        <td>
+                            <ul>
+                                <li>Manage Finances and maintain cashier's area clean</li>
+                                <li>Fulfill beverages orders while providing excellent customer service</li>
+                                <li>Maintained store quality with regular upkeep</li>
+                                <li>Opened and Closed the store weekly in a timely manner and took in inventory</li>
+                            </ul>
+                        </td>
+                    </tr>
+                </table>
+
+                <!-- <div style="padding: 20px " ; id="State Farm ">
+                    <h2>Work Experience</h2>
+                    <h3>State Farm - SWE</h3>
+                    <div class="fakeimg " style="height:100px; width: 100px; float: left; ">Image</div>
+                    <p style="margin-left: 110px; "></p>
+                </div>
+                <br> -->
+                <!-- <div style="padding: 20px " ; id="ARL West ">
+                    <h3>ARL West - Journeyman Fellow</h3>
+                    <div class="fakeimg " style="height:100px; width: 100px; float: left; ">Image</div>
+                    <p style="margin-left: 110px; ">Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+                </div>
+                <br>
+                <div style="padding: 20px " ; id="KFT ">
+                    <h3>KungFuTea - Barista</h3>
+                    <div class="fakeimg " style="height:100px; width: 100px; float: left; ">Image</div>
+                    <p style="margin-left: 110px; ">Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+                </div> -->
+
+            </div>
+        </div>
+    </div>
+
+    <div class="footer ">
+        <h2>Footer</h2>
+    </div>
+
+</body>
+
+</html>
+
+
+
+
+<!-- 
+Pasindu Siriwardena
+Currently attending Calfornia State University Los Angeles
+Master's in Computer Science (05/2022) -->

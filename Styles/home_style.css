@@ -14,11 +14,13 @@ section {
     max-width: min-content;
     width: 100%;
     display: flex;
+    padding: 20px;
     right: 0;
     left: 0;
     bottom: 0;
     top: 0;
     margin: auto;
+    background-color: rgba(238, 221, 126, 0.128);
 }
 
 a {
@@ -27,18 +29,27 @@ a {
     overflow: hidden;
 }
 
-img {
-    width: 300px;
+.hover {
     height: 300px;
-    margin: 10px;
-    transition: transform .5s ease;
+    /* Modify this according to your need */
     overflow: hidden;
+    /* Removing this will break the effects */
 }
 
-img:hover {
+.hover img {
+    width: 300px;
+    height: 300px;
+    transition: transform .5s ease;
+}
+
+.hover :hover img {
     -ms-transform: scale(1.5);
     /* IE 9 */
     -webkit-transform: scale(1.5);
     /* Safari 3-8 */
     transform: scale(1.5);
+}
+
+.space {
+    padding: 10px;
 }
